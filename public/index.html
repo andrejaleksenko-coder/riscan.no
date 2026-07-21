@@ -2,13 +2,151 @@
 <html lang="no">
 <head>
   <meta charset="UTF-8">
-  <title>RISCAN</title><link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>RISCAN</h1>
-  <p>Independent hardware intelligence for Norway.</p>
-  <div id="products">Laster produkter...</div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <script src="app.js?v=2"></script>
+  <title>RISCAN — Reliable hardware from Europe</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">RISCAN</a>
+
+      <nav class="main-nav">
+        <a href="#products">Products</a>
+        <a href="#trust">Why RISCAN</a>
+        <a href="#promise">Our promise</a>
+      </nav>
+
+      <button class="cart-button" type="button">
+        Cart
+        <span id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Hardware for Norway</p>
+
+        <h1>
+          Reliable hardware from Europe.
+          <span>Delivered with honesty.</span>
+        </h1>
+
+        <p class="hero-text">
+          Clear prices, real delivery estimates, secure payments
+          and support you can actually reach.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-button" href="#products">View products</a>
+          <a class="secondary-button" href="#promise">Our philosophy</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected hardware</p>
+            <h2>Featured products</h2>
+          </div>
+
+          <p>
+            Carefully selected components with transparent pricing
+            and honest delivery information.
+          </p>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+          <div class="loading-card">
+            Loading products...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-section" id="trust">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Why RISCAN</p>
+            <h2>Built around trust</h2>
+          </div>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card">
+            <h3>Honest delivery estimates</h3>
+            <p>
+              We show realistic delivery times instead of promises
+              designed only to win the sale.
+            </p>
+          </article>
+
+          <article class="trust-card">
+            <h3>Secure payments</h3>
+            <p>
+              Payments and customer information are handled with
+              security and privacy as core requirements.
+            </p>
+          </article>
+
+          <article class="trust-card">
+            <h3>Shipment tracking</h3>
+            <p>
+              Customers should always know where their order is
+              and what happens next.
+            </p>
+          </article>
+
+          <article class="trust-card">
+            <h3>Real support</h3>
+            <p>
+              When something matters, customers should be able
+              to reach a real person.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-section" id="promise">
+      <div class="container promise-card">
+        <p class="eyebrow">The RISCAN philosophy</p>
+
+        <h2>
+          We do not sell computer hardware.
+        </h2>
+
+        <p class="promise-statement">
+          We sell the confidence that everything will happen
+          exactly as we promised.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="logo" href="#">RISCAN</a>
+        <p>Reliable hardware from Europe to Norway.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:support@riscan.no">support@riscan.no</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=3"></script>
 </body>
 </html>
