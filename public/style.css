@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 40px;
+    background: #0f172a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+#products {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    background: #1e293b;
+}
