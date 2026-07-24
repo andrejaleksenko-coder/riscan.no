@@ -1,0 +1,131 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 720 520"
+  role="img"
+  aria-labelledby="map-title map-description"
+>
+  <title id="map-title">Hardware route from Europe to Norway</title>
+  <desc id="map-description">
+    A minimal illustration showing reliable hardware delivery from Europe to Norway.
+  </desc>
+
+  <defs>
+    <linearGradient id="route-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6f7b8a"/>
+      <stop offset="100%" stop-color="#f2f5f8"/>
+    </linearGradient>
+
+    <filter id="soft-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <marker
+      id="arrow"
+      markerWidth="10"
+      markerHeight="10"
+      refX="8"
+      refY="5"
+      orient="auto"
+      markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L10,5 L0,10 Z" fill="#f2f5f8"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="#8c96a3" stroke-width="2" opacity="0.4">
+    <path d="M120 370
+             C145 325 190 300 235 305
+             C270 278 325 275 355 305
+             C390 292 430 310 445 345
+             C415 365 390 385 350 390
+             C315 420 260 430 220 405
+             C180 410 145 395 120 370 Z"/>
+
+    <path d="M474 255
+             C480 215 495 180 515 150
+             C528 125 535 92 530 60
+             C550 82 562 115 556 150
+             C548 185 535 220 520 250
+             C510 275 500 305 495 335"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text
+      x="235"
+      y="455"
+      fill="#aab2bc"
+      font-size="22"
+      letter-spacing="5"
+    >
+      EUROPE
+    </text>
+
+    <text
+      x="485"
+      y="42"
+      fill="#f2f5f8"
+      font-size="22"
+      font-weight="600"
+      letter-spacing="4"
+    >
+      NORWAY
+    </text>
+  </g>
+
+  <path
+    d="M300 355
+       C370 330 430 285 475 220
+       C495 190 510 155 520 115"
+    fill="none"
+    stroke="url(#route-gradient)"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-dasharray="10 12"
+    marker-end="url(#arrow)"
+  />
+
+  <circle cx="300" cy="355" r="8" fill="#7f8996"/>
+  <circle
+    cx="520"
+    cy="115"
+    r="9"
+    fill="#f2f5f8"
+    filter="url(#soft-glow)"
+  />
+
+  <circle
+    cx="520"
+    cy="115"
+    r="20"
+    fill="none"
+    stroke="#f2f5f8"
+    stroke-width="2"
+    opacity="0.35"
+  />
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text
+      x="410"
+      y="390"
+      fill="#f2f5f8"
+      font-size="24"
+      font-weight="600"
+    >
+      Delivered with honesty.
+    </text>
+
+    <text
+      x="410"
+      y="420"
+      fill="#8f99a6"
+      font-size="15"
+      letter-spacing="1"
+    >
+      EUROPE → NORWAY
+    </text>
+  </g>
+</svg>
