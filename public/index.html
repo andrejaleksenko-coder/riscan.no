@@ -28,26 +28,153 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Hardware for Norway</p>
+   <section class="hero">
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow">Hardware for Norway</p>
 
-        <h1>
-          Reliable hardware from Europe.
-          <span>Delivered with honesty.</span>
-        </h1>
+      <h1>
+        Reliable hardware from Europe.
+        <span>Delivered with honesty.</span>
+      </h1>
 
-        <p class="hero-text">
-          Clear prices, real delivery estimates, secure payments
-          and support you can actually reach.
-        </p>
+      <p class="hero-text">
+        Clear prices, real delivery estimates, secure payments
+        and support you can actually reach.
+      </p>
 
-        <div class="hero-actions">
-          <a class="primary-button" href="#products">View products</a>
-          <a class="secondary-button" href="#promise">Our philosophy</a>
-        </div>
+      <div class="hero-actions">
+        <a class="primary-button" href="#products">View products</a>
+        <a class="secondary-button" href="#promise">Our philosophy</a>
       </div>
-    </section>
+    </div>
+
+    <div class="hero-map" aria-label="Delivery route from Europe to Norway">
+      <div class="map-glow"></div>
+
+      <svg
+        class="europe-map"
+        viewBox="0 0 620 480"
+        role="img"
+        aria-labelledby="map-title map-description"
+      >
+        <title id="map-title">Europe to Norway delivery route</title>
+        <desc id="map-description">
+          A stylized map showing hardware delivery from Europe to Norway.
+        </desc>
+
+        <defs>
+          <linearGradient id="mapGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#334155"></stop>
+            <stop offset="100%" stop-color="#1e293b"></stop>
+          </linearGradient>
+
+          <linearGradient id="routeGradient" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stop-color="#60a5fa"></stop>
+            <stop offset="100%" stop-color="#2563eb"></stop>
+          </linearGradient>
+
+          <filter id="routeGlow">
+            <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+            <feMerge>
+              <feMergeNode in="blur"></feMergeNode>
+              <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+          </filter>
+
+          <marker
+            id="arrowHead"
+            markerWidth="12"
+            markerHeight="12"
+            refX="9"
+            refY="6"
+            orient="auto"
+          >
+            <path d="M0,0 L12,6 L0,12 Z" fill="#60a5fa"></path>
+          </marker>
+        </defs>
+
+        <path
+          class="map-land"
+          d="
+            M105 300
+            L85 267
+            L105 230
+            L145 214
+            L164 180
+            L212 166
+            L248 178
+            L280 158
+            L313 168
+            L340 145
+            L382 154
+            L407 183
+            L440 192
+            L456 224
+            L438 252
+            L463 278
+            L448 310
+            L410 323
+            L389 356
+            L348 349
+            L317 371
+            L273 355
+            L239 373
+            L199 348
+            L155 351
+            L130 327
+            Z
+          "
+        ></path>
+
+        <path
+          class="norway-land"
+          d="
+            M390 62
+            L410 39
+            L428 55
+            L419 83
+            L438 104
+            L424 132
+            L441 158
+            L426 189
+            L407 182
+            L396 151
+            L380 128
+            L391 101
+            L377 80
+            Z
+          "
+        ></path>
+
+        <circle class="origin-ring" cx="292" cy="265" r="13"></circle>
+        <circle class="origin-dot" cx="292" cy="265" r="5"></circle>
+
+        <path
+          class="delivery-route"
+          d="M304 254 C355 222, 374 172, 407 122"
+          marker-end="url(#arrowHead)"
+        ></path>
+
+        <circle class="destination-ring" cx="407" cy="122" r="13"></circle>
+        <circle class="destination-dot" cx="407" cy="122" r="5"></circle>
+
+        <text class="map-label europe-label" x="230" y="315">EUROPE</text>
+        <text class="map-label norway-label" x="447" y="105">NORWAY</text>
+
+        <text class="route-caption" x="325" y="214">
+          Transparent delivery
+        </text>
+      </svg>
+
+      <div class="map-message">
+        <span class="map-message-dot"></span>
+        Europe → Norway
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <section class="products-section" id="products">
       <div class="container">
