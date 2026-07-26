@@ -4,7 +4,7 @@ async function loadProducts() {
 
     try {
 
-        const response = await fetch("http://192.168.10.2:8000/products");
+        const response = await fetch("http://127.0.0.1:8000/products");
         const products = await response.json();
 
         container.innerHTML = "";
