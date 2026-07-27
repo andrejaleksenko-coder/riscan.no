@@ -4,8 +4,8 @@ async function loadProducts() {
 
     try {
 
-     fetch("/products")
-        const products = await response.json();
+     const response = await fetch("/products");
+const products = await response.json();
 
         container.innerHTML = "";
 
