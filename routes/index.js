@@ -3,8 +3,8 @@ const homeController = require("../controllers/homeController");
 const productsRoutes = require("./products");
 
 router.get("/", homeController.home);
-router.get("/api/health", homeController.health);
+router.get("/health", homeController.health);
 
-router.use("/api/products", productsRoutes);
+router.use("/products", productsRoutes);
 
 module.exports = router;
