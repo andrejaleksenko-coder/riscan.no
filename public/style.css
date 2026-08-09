@@ -6,8 +6,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #0f172a;
-    color: #f8fafc;
+    background: #ffffff;
+    color: #0f172a;
     line-height: 1.6;
 }
 
@@ -19,8 +19,8 @@ body {
 .site-header {
     position: sticky;
     top: 0;
-    background: rgba(15,23,42,.95);
-    border-bottom: 1px solid #1e293b;
+    background: rgba(255,255,255,.92);
+    border-bottom: 1px solid #e2e8f0;
     backdrop-filter: blur(10px);
 }
 
@@ -28,11 +28,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 72px;
+    height: 56px;
 }
 
 .logo {
-    color: white;
+     color: #0f172a;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: bold;
@@ -45,7 +45,7 @@ body {
 }
 
 .main-nav a {
-    color: #cbd5e1;
+    color: #475569;
     text-decoration: none;
 }
 
@@ -67,15 +67,14 @@ body {
 }
 
 .eyebrow {
-    color: #60a5fa;
-    text-transform: uppercase;
+    color: #2563eb;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 2px;
-    font-size: .85rem;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
 }
-
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
 }
 
@@ -85,9 +84,10 @@ body {
 }
 
 .hero-text {
-    color: #cbd5e1;
-    max-width: 700px;
-    margin-bottom: 35px;
+    color: #334155;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 }
 
 .hero-actions {
@@ -109,15 +109,25 @@ body {
 
 .secondary-button {
     border: 1px solid #334155;
-    color: white;
+    color: color: #0f172a;
 }
 
-.products-section,
-.trust-section,
+.products-section {
+    padding: 70px 0;
+    background: #ffffff;
+}
+
+.trust-section {
+    padding: 70px 0;
+    background: #ffffff;
+}
+
 .promise-section {
     padding: 70px 0;
+    background: #ffffff;
 }
-
+}
+    
 .section-heading {
     display: flex;
     justify-content: space-between;
@@ -133,10 +143,48 @@ body {
 
 .loading-card,
 .product-card {
-    background: #1e293b;
-    border: 1px solid #334155;
-    border-radius: 16px;
-    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    box-shadow:
+        0 12px 30px rgba(15,23,42,.05),
+        0 3px 8px rgba(15,23,42,.04);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+.product-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 24px 48px rgba(15,23,42,.10),
+        0 8px 18px rgba(15,23,42,.08);
+
+}
+.product-card h3{
+
+    color:#0f172a;
+
+    font-size:1.25rem;
+
+    margin-bottom:14px;
+
+}
+.product-card p{
+
+    color:#64748b;
+
+    line-height:1.7;
+
 }
 
 .trust-grid {
@@ -146,10 +194,34 @@ body {
 }
 
 .trust-card {
-    background: #1e293b;
-    padding: 24px;
-    border-radius: 16px;
-    border: 1px solid #334155;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.06),
+        0 4px 12px rgba(15, 23, 42, 0.04);
+
+    color: #0f172a;
+}.trust-card h3 {
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.trust-card p {
+    color: #475569;
+    line-height: 1.65;
+}
+
+.trust-section {
+    background: #f8fafc;
+}.trust-section .eyebrow {
+    color: #2563eb;
+}
+
+.trust-section h2 {
+    color: #0f172a;
 }
 
 .promise-card {
@@ -165,9 +237,43 @@ body {
     color: #60a5fa;
 }
 
-.site-footer {
-    padding: 40px 0;
-    border-top: 1px solid #1e293b;
+.site-footer{
+
+    background:#f8fafc;
+
+    border-top:1px solid #e2e8f0;
+
+    padding:60px 0;
+
+}
+.footer-company{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    color:#0f172a;
+
+    margin-bottom:12px;
+
+}
+
+.footer-philosophy{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+.footer-copy{
+
+    color:#94a3b8;
+
+    font-size:.9rem;
+
 }
 
 .footer-inner {
@@ -232,172 +338,169 @@ body {
 .product-card h3{
     margin-bottom:10px;
 }
-/* RISCAN hero delivery map */
+//* RISCAN hero — global manufacturer map */
 
 .hero {
     position: relative;
+    min-height: 760px;
+    padding: 120px 0 100px;
     overflow: hidden;
-    padding: 90px 0 80px;
 }
 
 .hero-content {
+    position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(420px, .95fr);
+    grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1.2fr);
     align-items: center;
-    gap: 60px;
+    gap: 40px;
+    min-height: 540px;
 }
 
 .hero-copy {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero h1 {
-    line-height: 1.08;
+    max-width: 720px;
+    font-size: clamp(3rem, 5vw, 5.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.hero-text {
+    max-width: 620px;
+    font-size: 1.15rem;
 }
 
 .hero-map {
     position: relative;
-    min-height: 480px;
+    min-height: 620px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    border: 1px solid rgba(96, 165, 250, .18);
-    border-radius: 32px;
-    background:
-        radial-gradient(circle at 70% 20%, rgba(37, 99, 235, .18), transparent 35%),
-        linear-gradient(145deg, rgba(30, 41, 59, .82), rgba(15, 23, 42, .96));
-    box-shadow:
-        0 30px 80px rgba(0, 0, 0, .3),
-        inset 0 1px 0 rgba(255, 255, 255, .04);
+    overflow: visible;
 }
 
-.hero-map::before {
-    content: "";
+/* Large global map */
+
+.world-map {
     position: absolute;
-    inset: 0;
-    opacity: .18;
-    background-image:
-        linear-gradient(rgba(148, 163, 184, .16) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(148, 163, 184, .16) 1px, transparent 1px);
-    background-size: 42px 42px;
-    mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
-}
-
-.map-glow {
-    position: absolute;
-    width: 260px;
-    height: 260px;
-    top: 30px;
-    right: 30px;
-    border-radius: 50%;
-    background: rgba(37, 99, 235, .2);
-    filter: blur(70px);
-}
-
-.europe-map {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    max-width: 610px;
+    width: 1500px;
+    max-width: none;
     height: auto;
-    padding: 16px;
+    right: -430px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.92;
 }
 
-.map-land,
-.norway-land {
-    fill: url(#mapGradient);
-    stroke: #64748b;
-    stroke-width: 2;
-    stroke-linejoin: round;
+.world-land {
+    fill: #f1f5f9;
+    stroke: #94a3b8;
+    stroke-width: 3;
 }
 
-.norway-land {
-    fill: rgba(37, 99, 235, .35);
-    stroke: #60a5fa;
+.manufacturer-point {
+    fill: #2563eb;
+    stroke: #ffffff;
+    stroke-width: 4;
+    transform-box: fill-box;
+    transform-origin: center;
+    filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.45));
+    animation: manufacturerPulse 2.4s ease-in-out infinite;
 }
 
-.delivery-route {
-    fill: none;
-    stroke: url(#routeGradient);
-    stroke-width: 5;
-    stroke-linecap: round;
-    stroke-dasharray: 12 10;
-    filter: url(#routeGlow);
-    animation: route-flow 2.4s linear infinite;
+.manufacturer-point:nth-of-type(2) {
+    animation-delay: 0.25s;
 }
+/* ---------- HERO PRODUCT ---------- */
 
-.origin-ring,
-.destination-ring {
-    fill: rgba(96, 165, 250, .12);
-    stroke: #60a5fa;
-    stroke-width: 2;
-}
-
-.origin-dot,
-.destination-dot {
-    fill: #bfdbfe;
-}
-
-.map-label {
-    fill: #cbd5e1;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 4px;
-}
-
-.norway-label {
-    fill: #93c5fd;
-    font-size: 15px;
-}
-
-.route-caption {
-    fill: #94a3b8;
-    font-size: 13px;
-    letter-spacing: 1px;
-}
-
-.map-message {
+.hero-product {
     position: absolute;
-    left: 28px;
-    bottom: 24px;
-    z-index: 2;
+    z-index: 4;
+    right: 40px;
+    top:50%;
+    transform: translateY(-50%);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 10px 14px;
-    color: #cbd5e1;
-    font-size: .85rem;
-    letter-spacing: .5px;
-    border: 1px solid rgba(148, 163, 184, .2);
-    border-radius: 999px;
-    background: rgba(15, 23, 42, .82);
-    backdrop-filter: blur(12px);
+    pointer-events: none;
 }
 
-.map-message-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #60a5fa;
-    box-shadow: 0 0 14px #60a5fa;
+
+}
+    border: 1px solid #e2e8f0;
+    box-shadow:
+        0 32px 70px rgba(15, 23, 42, 0.14),
+        0 10px 24px rgba(15, 23, 42, 0.08);
 }
 
-@keyframes route-flow {
-    to {
-        stroke-dashoffset: -44;
+.hero-product-label {
+    margin-top: 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.manufacturer-point:nth-of-type(3) {
+    animation-delay: 0.5s;
+}
+
+.manufacturer-point:nth-of-type(4) {
+    animation-delay: 0.75s;
+}
+
+.manufacturer-point:nth-of-type(5) {
+    animation-delay: 1s;
+}
+
+.manufacturer-point:nth-of-type(6) {
+    animation-delay: 1.25s;
+}
+
+@keyframes manufacturerPulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.85;
+    }
+
+    50% {
+        transform: scale(1.35);
+        opacity: 1;
     }
 }
 
-@media (max-width: 960px) {
+/* Old Europe → Norway map is intentionally removed */
+
+.europe-map,
+.map-message {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 80px;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 25px;
     }
 
     .hero-map {
-        min-height: 420px;
+        min-height: 520px;
+    }
+
+    .world-map {
+        position: relative;
+        width: 1200px;
+        right: auto;
+        top: auto;
+        transform: translateX(-8%);
     }
 }
 
@@ -407,11 +510,11 @@ body {
     }
 
     .hero {
-        padding: 70px 0 55px;
+        padding: 70px 0 50px;
     }
 
     .hero h1 {
-        font-size: 2.6rem;
+        font-size: 3rem;
     }
 
     .hero-actions {
@@ -424,19 +527,109 @@ body {
     }
 
     .hero-map {
-        min-height: 340px;
-        border-radius: 22px;
+        min-height: 320px;
     }
 
-    .map-message {
-        left: 18px;
-        bottom: 16px;
+    .world-map {
+        width: 760px;
+        transform: translateX(-13%);
     }
+}
+.hero-ssd {
+    display: block;
+    width: 620px;
+    max-width: none;
+    height: auto;
+
+    transform:
+        perspective(1100px)
+        rotateY(-28deg)
+        rotateX(14deg)
+        rotate(12deg);
+
+    transform-origin: center center;
+
+    filter:
+        drop-shadow(0 45px 55px rgba(15,23,42,0.32));
+
+}
+/* ---------- BRAND ---------- */
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .delivery-route {
-        animation: none;
-    }
+.brand .logo {
+    color: #2563eb;
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-decoration: none;
 }
-`´
+
+.brand-since {
+    margin-top: 10px;
+    color: #475569;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+.footer-contact{
+
+    text-align:right;
+
+}
+
+.footer-contact h4{
+
+    color:#0f172a;
+
+    font-size:1rem;
+
+    margin-bottom:18px;
+
+}
+
+.footer-contact p{
+
+    color:#64748b;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+
+}
+/* ---------- PRODUCT DETAILS ---------- */
+
+.product-info {
+    width: 100%;
+}
+
+.product-meta {
+    margin-bottom: 8px;
+    color: #2563eb;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.product-store {
+    margin-top: 6px;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.product-actions {
+    max-width: 440px;
+    margin-top: 22px;
+}
+
+.buy-button,
+.details-button {
+    min-width: 160px;
+}

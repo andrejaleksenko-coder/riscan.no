@@ -1,38 +1,59 @@
-async function loadProducts() {
+ async function loadProducts() {
 
     const container = document.getElementById("product-grid");
 
     try {
 
-const response = await fetch("/api/products");
+        const response = await fetch("/api/products");
 
-
-const products = await response.json();
+        const products = await response.json();
 
         container.innerHTML = "";
 
         products.forEach(product => {
 
             container.innerHTML += `
-                <div class="product-card">
+                <article class="product-card">
+                <div class="product-image-wrap">
+    <img
+        src="/images/hero/Samsung%20990%20PRO%202TB.webp"
+        alt="Samsung 990 PRO 2TB"
+        class="product-image"
+    >
+</div>
 
-                    <h3>${product.name}</h3>
+                    <div class="product-info">
 
-                    <p class="price">
-                        ${product.price} ${product.currency}
-                    </p>
+                        <p class="product-meta">
+                            ${product.brand} · ${product.category}
+                        </p>
 
-                    <div class="product-actions">
-                        <button class="buy-button">
-                            Add to Cart
-                        </button>
+                        <h3>${product.name}</h3>
 
-                        <button class="details-button">
-                            Buy Now
-                        </button>
+                        <p class="product-store">
+                            Available from ${product.store}
+                        </p>
+
+                        <p class="price">
+                            ${Number(product.price).toLocaleString("nb-NO")}
+                            ${product.currency}
+                        </p>
+
+                        <div class="product-actions">
+
+                            <button class="buy-button">
+                                Add to Cart
+                            </button>
+
+                            <button class="details-button">
+                                Buy Now
+                            </button>
+
+                        </div>
+
                     </div>
 
-                </div>
+                </article>
             `;
 
         });
@@ -52,3 +73,4 @@ const products = await response.json();
 }
 
 loadProducts();
+
