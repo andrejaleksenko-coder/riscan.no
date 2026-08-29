@@ -1,0 +1,21 @@
+const Database = require("better-sqlite3");
+const path = require("path");
+const dbPath = path.join(__dirname, "../../../database/riscan.db");
+const db = new Database(dbPath);
+const supplier = db
+    .prepare("SELECT * FROM suppliers WHERE id = ?")
+    .get(1);
+
+console.log(supplier);
+const product = db
+    .prepare("SELECT * FROM products WHERE mpn = ?")
+    .get("MZ-V9P2T0BW");
+
+console.log(product);
+async function fetchAlsoOffer(product) {
+
+}
+async function fetchAlsoOffer(product) {
+    console.log("Fetching ALSO offer for:", product.mpn);
+}
+fetchAlsoOffer(product);
