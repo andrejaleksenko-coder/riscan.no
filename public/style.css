@@ -30,6 +30,11 @@ body {
     align-items: center;
     height: 56px;
 }
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
 
 .logo {
      color: #0f172a;
@@ -350,7 +355,7 @@ body {
 .hero-content {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(360px, 0.8fr) minmax(0, 1.2fr);
+   grid-template-columns: minmax(460px, 1fr) minmax(0, 1fr);
     align-items: center;
     gap: 40px;
     min-height: 540px;
@@ -362,7 +367,7 @@ body {
 }
 
 .hero h1 {
-    max-width: 720px;
+    max-width: 900px;
     font-size: clamp(3rem, 5vw, 5.4rem);
     line-height: 1.02;
     letter-spacing: -0.04em;
@@ -632,4 +637,63 @@ body {
 .buy-button,
 .details-button {
     min-width: 160px;
+}
+.product-image-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.product-image {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.product-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin-top: 24px;
+  margin-bottom: 36px;
+
+  padding: 18px 20px;
+
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+}
+
+.product-categories .category-card {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 16px;
+
+  border: 1px solid #d9dee8;
+  border-radius: 999px;
+
+  text-decoration: none;
+  color: #111827;
+  background: #ffffff;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.product-categories .category-card:hover {
+  border-color: #9ca3af;
+}
+.support-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.sign-in {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
 }

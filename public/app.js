@@ -16,10 +16,12 @@
                 <article class="product-card">
                 <div class="product-image-wrap">
     <img
-        src="/images/hero/Samsung%20990%20PRO%202TB.webp"
-        alt="Samsung 990 PRO 2TB"
-        class="product-image"
-    >
+       
+        src="${product.image}"
+    alt="${product.name}"
+    class="product-image"
+>
+
 </div>
 
                     <div class="product-info">
@@ -30,9 +32,7 @@
 
                         <h3>${product.name}</h3>
 
-                        <p class="product-store">
-                            Available from ${product.store}
-                        </p>
+                        
 
                         <p class="price">
                             ${Number(product.price).toLocaleString("nb-NO")}
